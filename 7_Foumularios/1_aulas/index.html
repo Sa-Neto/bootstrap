@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulários</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="col-4 m-4">
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label" id="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+                <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de e-mail.</div>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Digite a sua senha">
+            </div>
+            <!-- <input type="submit" class="btn btn-primary" value="Cadastrar"> -->
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    
+           <!-- Label flutuante -->
+        <h2>Faça o login para continuar:</h2>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Insirar o seu e-mail">
+            <label for="email">Insirar o seu email</label>
+        </div>
+       
+    </div>
+     <!-- LAYOUTS COM FORMS -->
+     <div class="container col-6 mb-4">
+        <h2>Cadastre-se preenchendo o formulário:</h2>
+        <form class="row g-3">
+            <div class="col-md-8">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail">
+            </div>
+
+            <div class="col-md-4">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Digite o seu e-mail">
+            </div>
+
+            <div class="col-md-10">
+                <label for="cep" class="form-label">Rua:</label>
+                <input type="text" class="form-control" placeholder="Digite o seu CEP">
+            </div>
+            <div class="col-md-2">
+                <label for="numero" class="form-label">Número:</label>
+                <input type="text" id="numero" class="form-control" placeholder="N°">
+            </div>
+
+            <div class="col-md-4">
+                <label for="estado" class="form-label">Estado:</label>
+                <select name="estado" id="estado" class="form-select">
+                    <option selected>Escolha</option>
+                    <option value="1">...</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" id="newsletter" class="form-check-input">
+                    <label for="newsletter" class="form-check-label">Receber newsletter</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+ 
+</body>
+</html>
